@@ -10,6 +10,7 @@ import {Hero} from './hero';
     <ul>
     <li *ngFor=" let hero of heroes">{{hero.name}}</li>
     </ul>
+    <p *ngIf="heroes.length > 3">There are many heroes</p>
   `,
   styleUrls: ['./app.component.css']
 })
